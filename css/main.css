@@ -213,12 +213,27 @@ body {
   margin-left: 8em;
   width: 40%;
   height: 100%;
+  
+}
+
+.img-container:hover{
+  transform: scale(1.15);
+  transition: ease 0.5s;
+  border: transparent;
+}
+
+.img-container img{
+  object-fit: cover;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .images-bottom{
   height: 6em;
   display: flex;
   padding-left: 8em;
+  margin-left: 3.5em;
 }
 
 .little-image{
@@ -226,6 +241,12 @@ body {
   width: 8%;
   margin-left: 1em;
   border-radius: 0.2em;
+}
+
+.little-image img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 
@@ -417,6 +438,7 @@ body {
 .box-img img{
   width: 100%;
   object-fit: contain;
+  height: 100%;
 }
 
 
@@ -765,7 +787,7 @@ option{
 
 .section-main-center{
   width: 100%;
-  height: 85em;
+  height: 95em;
   display: flex;
 }
 
@@ -909,9 +931,9 @@ option{
 
 .main-center-left{
   display: flex;
-  flex-direction: column;
   width: 75%;
   background-color: rgba(198, 196, 196, 0.387);
+  flex-direction: column;
   
 }
 
@@ -957,6 +979,17 @@ background-color: #fff;
 }
 
 
+.vetements-container{
+  height: 24em;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  padding-right: 1em;
+  margin-top: 1em;
+  background-color: transparent;
+}
+
+
 
 .vetements-center-container{
   height: 24em;
@@ -981,38 +1014,120 @@ background-color: #fff;
 
 
 
+.vetements-container{
+  height: 70rem;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+
 
 
 
 
 .vetements-top-box{
-  border: 1px solid rgb(198, 196, 196);
-  width: 30em;
+  border: transparent;
+  width: 18em;
   overflow: hidden;
   margin-left: 0.5em;
   border-radius: 0.5em;
   box-shadow: 0 0 20px 0px rgb(198, 196, 196);
   background-color: white;
+  height: 48rem;
 }
+
+.achat{
+  padding: 0.4em 3em;
+  font-size: 18px;
+  background-color: #1320DC;
+  border-radius: 0.5em;
+  border: 2px solid #1320DC;
+  margin-top: 10px;
+  
+}
+
+.achat:hover{
+  background-color: white;
+  color: #1320DC;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.achat a{
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+
+.achat a:hover{
+  color: blue;
+}
+
+.add{
+  border: 1px solid blue;
+  padding: 0.7em 1.2em;
+  border-radius: 0.5em;
+  color: blue;
+}
+
+.add:hover{
+  background-color: blue;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 
 
 .logo-vetements-container{
   width: 100%;
-  height: 100%;
+  height: 66%;
   overflow: hidden;
+  display: flex;
   box-shadow: 0 0 0px 0px #b6b6ba;
   
   
   
 }
 
-.vetements-top-box:hover{
-  background-color: #ed84b239;
-  transition: all 0.3s;
+
+.logo-vetements-container:hover{
   cursor: pointer;
-  transform: matrix3d(100);
-  border: 4px solid red;
+  transition: all 0.8s;
+  transform: scale(1.28);
+  box-shadow: 0 0 0 black;
 }
+
+
+.prix-vente{
+  border: 1px solid #b6b6ba13;
+  height: 34%;
+  padding-left: 2em;
+  padding-top: 1em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.prix-vente:hover{
+  transition: all 0.8s;
+  transform: scale(1.08);
+  box-shadow: 0 0 0 black;
+  cursor: pointer;
+
+}
+
+.prix-de-vente{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
 .img-jupes1{
   object-fit: cover;
   width: 100%;
