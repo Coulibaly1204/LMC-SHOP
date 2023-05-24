@@ -144,6 +144,7 @@ body {
 }
 
 
+
 .link-acheter{
   text-decoration: none;
   color: #f1f1f1;
@@ -997,7 +998,7 @@ background-color: #fff;
 
 .logo-vetements-container{
   width: 100%;
-  height: 60%;
+  height: 100%;
   overflow: hidden;
   box-shadow: 0 0 0px 0px #b6b6ba;
   
@@ -1010,6 +1011,7 @@ background-color: #fff;
   transition: all 0.3s;
   cursor: pointer;
   transform: matrix3d(100);
+  border: 4px solid red;
 }
 .img-jupes1{
   object-fit: cover;
@@ -1089,12 +1091,13 @@ span{
 
 
 .boutton-acheter:hover{
-  background-color: #fff;
-  color: #1320DC;
+  background-color: #ffffffd0;
+  color: #1320dcd2;
   transition: all 0.3s;
   cursor: pointer;
-  border: 1px solid #1320DC;
+  border: 1px solid #1320dccd;
   transform: translate3d(10px);
+  visibility: visible;
 }
 
 
@@ -1175,6 +1178,9 @@ span{
   visibility: visible;
   
 }
+
+
+
 
 .login{
   text-decoration: none;
@@ -1383,7 +1389,6 @@ span{
 
 .section-main{
   border: 1px solid #dfdfe2b5;
-  height: 250vh;
   background-color: #dfdfe2b5;
   display: flex;
   flex-direction: column;
@@ -1428,6 +1433,159 @@ span{
   margin-top: 3em;
   padding: 1em;
   overflow: hidden;
+}
+
+
+
+.accessoire-container{
+  width: 85%;
+  margin: 0 auto;
+  height: 300vh;
+  border-radius: 0.6em;
+  margin-top: 3em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.access-box{
+  border: 1px solid #b6b6ba54;
+  width: 30%;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background-color: #c6c6cf65;
+  box-shadow: 0 0 13px 0px black;
+  
+}
+
+
+.price{
+  border: 2px solid red;
+  position: relative;
+  width: 100%;
+}
+
+.image-container{
+  border: transparent;
+  height: 85%;
+  overflow: hidden;
+  border-radius: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-position-y: -30px;
+  background-position-x: -px;
+  
+}
+
+
+.prix{
+  height: 100%;
+  background-color: rgba(83, 2, 2, 0.158);
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.prix:hover{
+  opacity: 2;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.05);
+  
+}
+
+.accessoire-top-container{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.prix span{
+  font-size: 20px;
+  color: wheat;
+}
+
+.image-container img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.alliance{
+  font-size: 28px;
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prix-unit{
+  font-size: 25px;
+  font-weight: bold;
+  color: gold;
+  letter-spacing: 1.5px;
+}
+
+.remise{
+  font-weight: bold;
+  color: gold;
+  letter-spacing: 1.5px;
+}
+
+
+.box-plus-acheter{
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+
+
+}
+
+.buy{
+  border: 2px solid rgb(82, 2, 2);
+  padding: 0.7em 3em;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0.2em;
+  cursor: pointer;
+  color: rgb(249, 225, 86);
+  background-color: rgb(82, 2, 2);
+  font-family: monospace;
+
+}
+
+.plus{
+  border: 2px solid rgb(82, 2, 2);
+  padding: 0.7em 2em;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0.2em;
+  cursor: pointer;
+  color: rgb(249, 225, 86);
+  background-color: rgb(82, 2, 2);
+  font-family: monospace;
+}
+
+
+
+
+.box-plus-acheter button:hover{
+  background-color: red;
+  color:white ;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: monospace;
+  transform: translate3d(10px);
+  transition: all 0.5s;
+  border: 2px solid red;
+
 }
 
 
@@ -1480,6 +1638,7 @@ span{
   height: 60%;
   border-top-right-radius: 0.6em;
   border-top-left-radius: 0.6em;
+
 }
 
 
@@ -1493,7 +1652,15 @@ span{
 
 .price-container{
   padding-left: 1em;
+
 }
+
+.price-container:hover{
+  opacity: 2;
+  transition: all 2s;
+}
+
+
 
 
 .btn-voir-plus{
